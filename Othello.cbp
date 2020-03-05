@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Othello" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Othello" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Othello" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="F:/Programs/SDL2/include/SDL2" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf" />
+			<Add directory="F:/Programs/SDL2/lib" />
+		</Linker>
+		<Unit filename="include/AI.h" />
+		<Unit filename="include/AIUct.h" />
+		<Unit filename="include/BoardOthello.h" />
+		<Unit filename="include/Scene.h" />
+		<Unit filename="include/SceneGame.h" />
+		<Unit filename="include/SceneManager.h" />
+		<Unit filename="include/UIBoardOthello.h" />
+		<Unit filename="include/UIButton.h" />
+		<Unit filename="include/UIWidget.h" />
+		<Unit filename="include/settings.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/AI.cpp" />
+		<Unit filename="src/AIUct.cpp" />
+		<Unit filename="src/BoardOthello.cpp" />
+		<Unit filename="src/Scene.cpp" />
+		<Unit filename="src/SceneGame.cpp" />
+		<Unit filename="src/SceneManager.cpp" />
+		<Unit filename="src/UIBoardOthello.cpp" />
+		<Unit filename="src/UIButton.cpp" />
+		<Unit filename="src/UIWidget.cpp" />
+		<Unit filename="src/settings.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
